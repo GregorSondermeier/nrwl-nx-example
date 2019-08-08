@@ -1,2 +1,2 @@
-# nrwl-nx-example
+# nrwl/nx example
 Learning https://nx.dev/
