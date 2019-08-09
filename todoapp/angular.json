@@ -229,6 +229,32 @@
           "styleext": "scss"
         }
       }
+    },
+    "mybackendlib": {
+      "root": "libs/mybackendlib",
+      "sourceRoot": "libs/mybackendlib/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "tslint",
+            "tsConfig": [
+              "libs/mybackendlib/tsconfig.lib.json",
+              "libs/mybackendlib/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/mybackendlib/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/mybackendlib/jest.config.js",
+            "tsConfig": "libs/mybackendlib/tsconfig.spec.json"
+          }
+        }
+      }
     }
   },
   "cli": {

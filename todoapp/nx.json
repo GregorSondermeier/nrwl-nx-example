@@ -23,6 +23,9 @@
     },
     "ui": {
       "tags": ["platform:frontend"]
+    },
+    "mybackendlib": {
+      "tags": ["platform:backend"]
     }
   }
 }
