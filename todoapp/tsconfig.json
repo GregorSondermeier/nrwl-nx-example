@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@todoapp/data": ["libs/data/src/index.ts"]
+      "@todoapp/data": ["libs/data/src/index.ts"],
+      "@todoapp/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
