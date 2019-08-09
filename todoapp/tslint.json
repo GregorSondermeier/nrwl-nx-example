@@ -56,8 +56,16 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "platform:shared",
+            "onlyDependOnLibsWithTags": ["platform:shared"]
+          },
+          {
+            "sourceTag": "platform:frontend",
+            "onlyDependOnLibsWithTags": ["platform:frontend", "platform:shared"]
+          },
+          {
+            "sourceTag": "platform:backend",
+            "onlyDependOnLibsWithTags": ["platform:backend", "platform:shared"]
           }
         ]
       }

@@ -9,20 +9,20 @@
   },
   "projects": {
     "todos-e2e": {
-      "tags": [],
-      "implicitDependencies": ["api"]
+      "tags": []
     },
     "todos": {
-      "tags": []
+      "tags": ["platform:frontend"],
+      "implicitDependencies": ["api"]
     },
     "api": {
-      "tags": []
+      "tags": ["platform:backend"]
     },
     "data": {
-      "tags": []
+      "tags": ["platform:shared"]
     },
     "ui": {
-      "tags": []
+      "tags": ["platform:frontend"]
     }
   }
 }
