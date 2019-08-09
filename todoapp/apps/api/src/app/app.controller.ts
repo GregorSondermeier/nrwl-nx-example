@@ -11,7 +11,7 @@ export class AppController {
     return this.appService.getData();
   }
 
-  @Post('addTodo')
+  @Post('todos/add')
   addTodo() {
     return this.appService.addTodo();
   }

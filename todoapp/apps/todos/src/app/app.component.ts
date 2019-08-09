@@ -35,8 +35,10 @@ export class AppComponent implements OnDestroy {
   }
 
   addTodo() {
-    this.todos.push({
-      title: `Random ${Math.floor(Math.random() * 100)}`
-    })
+    this.http
+      .post('/api/todos/add', {})
+      .subscribe(t => {
+        this.fetch();
+      });
   }
 }
