@@ -9,7 +9,8 @@
   },
   "projects": {
     "todos-e2e": {
-      "tags": []
+      "tags": [],
+      "implicitDependencies": ["api"]
     },
     "todos": {
       "tags": []
