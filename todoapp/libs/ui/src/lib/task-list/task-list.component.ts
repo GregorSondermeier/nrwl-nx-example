@@ -2,11 +2,11 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Todo} from "@todoapp/data";
 
 @Component({
-  selector: 'todoapp-todos',
-  templateUrl: './todos.component.html',
-  styleUrls: ['./todos.component.scss']
+  selector: 'todoapp-task-list',
+  templateUrl: './task-list.component.html',
+  styleUrls: ['./task-list.component.scss']
 })
-export class TodosComponent implements OnInit {
+export class TaskListComponent implements OnInit {
   @Input() todos: Todo[];
 
   constructor() { }

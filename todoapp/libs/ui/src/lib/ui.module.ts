@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TodosComponent } from './todos/todos.component';
+import { TaskListComponent } from './task-list/task-list.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [TodosComponent],
-  exports: [TodosComponent]
+  declarations: [TaskListComponent],
+  exports: [TaskListComponent]
 })
 export class UiModule {}
